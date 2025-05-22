@@ -3,6 +3,7 @@ on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
-      - codebuild-Docker-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-DockerNew-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - run: echo "Hello World"
+
